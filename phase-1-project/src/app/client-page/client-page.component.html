@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="client-page.component.css">
+  <title>Client Creation Page</title>
+</head>
+<body class="fulll">
+  <header>
+    <h2 class="title"><strong>New Client Information</strong></h2>
+  </header>
+  <br>
+  <p style="text-align: center;">Please fill out the form below before moving on to the scheduling page.</p>
+  
+  <div id="form1">
+    <form id="myForm" (ngSubmit)="onSubmit()" #myForm="ngForm">
+      <label for="fname">First Name:</label><br>
+      <input type="text" id="fname" [(ngModel)]="fname" name="fname" required />
+      <br>
+      <label for="lname">Last Name:</label><br>
+      <input type="text" id="lname" [(ngModel)]="lname" name="lname" required />
+      <br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" [(ngModel)]="email" name="email" required />
+      <br>
+      <label for="pnumber">Phone Number:</label><br>
+      <input type="text" id="pnumber" [(ngModel)]="pnumber" name="pnumber" required />
+      <br>
+      <label for="bday">Date of Birth:</label><br>
+      <input type="date" id="bday" [(ngModel)]="bday" name="bday" required />
+      <br>
+
+      <label for="cres">Country of Residence:</label><br>
+      <select id="cres" name="cres" required>
+        <option value="united states">United States</option>
+        <option value="united kingdom">United Kingdom</option>
+        <option value="afghanistan">Afghanistan</option>
+        <option value="india">India</option>
+        <option value="china">China</option>
+        <option value="russia">Russia</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="canada">Canada</option>
+        <option value="mexico">Mexico</option>
+        <option value="australia">Australia</option>
+      </select><br>
+      
+      <button type="submit" router.navigate(schedule.component.html)>Submit</button>
+    </form>
+  </div>
+
+  <script src="client-page.component.ts"></script>
+</body>
+<router-outlet></router-outlet>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+  <head> <title> Client Schedule</title>
+    <link rel="stylesheet" href="schedule-page.component.css"> 
+  </head>
+  
+  <body style="text-align:center">
+    <div id="form2" >
+    <header style="text-decoration:underline"><h2>Scheduling</h2>
+    </header>
+    <p><b>Select the date/time that works best for your schedule.
+        <b></p>
+      <form id="myFormsched" onsubmit="return validateForm()" method="post">
+        <label name="pdate" class="schedule">Date:</label>
+        <input type="date" id="pdate" class="schedule" [(ngModel)]="pdate"
+        inputdateobject.min=2024-10-10; 
+        inputdateobject.max=2025-01-29 required><br>
+        <label name="ptime" class="schedule">Time:</label>
+        <input type="time" id="ptime" class="schedule" [(ngModel)]="ptime" required><br>
+        Contact Method:<input type="radio" 
+        id="phone" value="phone" class="schedule" >
+        <label name="phone" class="schedule">phone</label>
+        <input type="radio" id="memail" value="memail" class="schedule"  >
+        <label name="memail" class="schedule">email</label><br>
+        <label name="submit" class="schedule"></label>
+        <input type="submit">
+        </form>
+        </div>
+      </body>
+        

@@ -1,0 +1,22 @@
+@keyframes animate {
+    from {background-color: rgb(255, 170, 0);}
+    to {background-color: rgb(187, 6, 219);}
+  }
+  
+ 
+#form2{text-align: center;
+  width: 1500px;
+  height: 1500px;
+  background-color: rgb(255, 170, 0);
+  animation-name: animate;
+  animation-duration: 30s;
+}
+
+
+
+
+.schedule{text-align: center;
+margin-top: 70px;
+margin-bottom: 70px;
+font-size: larger;}
+

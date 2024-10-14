@@ -1,0 +1,27 @@
+.fulll{ 
+    font-family: 'Times New Roman', Times, serif;
+        background-color: rgb(70, 145, 145);
+    background-image: radial-gradient(rgb(10, 71, 73),
+     rgb(104, 208, 208),rgba(235, 239, 241, 0.785) );
+    }
+         
+    .title{text-align: center;margin-top: 50px;
+        border-color:rgb(7, 7, 7);
+        border-style: dotted;
+        margin-right: 400px;
+            margin-left: 400px;
+      
+    }
+        #form1 { text-align: center;
+            margin-top: 10px;
+            margin-right: 400px;
+            margin-left: 400px;
+            margin-bottom: 100px;
+            padding: 50px;
+        
+            border-radius: 100px;
+            border-width: 10px;
+            border-color: #090808;
+            border-style: solid;
+            clip-path: polygon(14% 0, 86% 0, 100% 50%, 85% 100%, 13% 100%, 0% 50%)}
+    
